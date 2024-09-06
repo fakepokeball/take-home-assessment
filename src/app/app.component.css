@@ -11,16 +11,17 @@ html, body {
   }
   
   header, footer {
-    background-color: var(--menu-color, #ccc);
+    background-color: var(--menu-color, #ccc); /* Varsayılan renk #ccc */
     text-align: center;
     padding: 1rem;
+    position: relative;
     flex-shrink: 0;
   }
   
   .layout {
     display: flex;
     flex: 1;
-    overflow: hidden;
+    position: relative;
   }
   
   .sidebar-left, .sidebar-right {
@@ -36,7 +37,7 @@ html, body {
     align-items: center;
   }
   
-  .menu-item:hover {
+  button:hover, .menu-item:hover {
     cursor: pointer;
     opacity: 0.8;
   }

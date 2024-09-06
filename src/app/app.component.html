@@ -1,10 +1,10 @@
-<header>Header</header>
+<header [style.background-color]="menuColor">Header</header>
 
 <div class="layout">
   <nav class="sidebar-left">
-    <div class="menu-item" (click)="changeColor('red')">Red</div>
-    <div class="menu-item" (click)="changeColor('blue')">Blue</div>
-    <div class="menu-item" (click)="changeColor('green')">Green</div>
+    <div class="menu-item" (click)="changeColor('red')" style="cursor:pointer;">Red</div>
+    <div class="menu-item" (click)="changeColor('blue')" style="cursor:pointer;">Blue</div>
+    <div class="menu-item" (click)="changeColor('green')" style="cursor:pointer;">Green</div>
   </nav>
 
   <main class="body-content">
@@ -16,4 +16,4 @@
   </nav>
 </div>
 
-<footer>Footer</footer>
+<footer [style.background-color]="menuColor">Footer</footer>

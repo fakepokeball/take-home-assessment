@@ -1,16 +1,6 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-layout">
-  <div class="form-group">
-    <input formControlName="name" placeholder="Name" required class="form-control" />
-  </div>
-  <div class="form-group">
-    <input formControlName="email" placeholder="Email" required class="form-control" />
-  </div>
-  <div class="form-actions">
-    <button type="submit" [disabled]="form.invalid" [style.backgroundColor]="menuColor" class="submit-button">
-      Submit
-    </button>
-    <button type="button" (click)="onReset()" [disabled]="form.pristine" [style.backgroundColor]="menuColor" class="reset-button">
-      Reset
-    </button>
-  </div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input formControlName="name" placeholder="Name" required />
+  <input formControlName="email" placeholder="Email" required />
+  <button type="submit" [disabled]="form.invalid" [style.background-color]="menuColor">Submit</button>
+  <button type="button" (click)="onReset()" [disabled]="form.pristine" [style.background-color]="menuColor">Reset</button>
 </form>

@@ -5,6 +5,6 @@ import { PageTwoComponent } from './layout/page-two/page-two.component';
 export const routes: Routes = [
   { path: 'one', component: PageOneComponent },
   { path: 'two', component: PageTwoComponent },
-  { path: '', redirectTo: 'one', pathMatch: 'full' }, // Redirect to 'one' by default
-  { path: '**', redirectTo: 'one' } // Wildcard route redirects to 'one'
+  { path: '', redirectTo: 'one', pathMatch: 'full' },
+  { path: '**', redirectTo: 'one' } 
 ];
