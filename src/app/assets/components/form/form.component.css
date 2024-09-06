@@ -1,0 +1,47 @@
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .submit-button, .reset-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button[disabled], .reset-button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 768px) {
+    .form-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .submit-button, .reset-button {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  }
+  

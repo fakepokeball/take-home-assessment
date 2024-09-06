@@ -9,32 +9,24 @@ html, body {
   body {
     overflow-y: auto;
   }
-
+  
   header, footer {
-    background-color: #ccc;
+    background-color: var(--menu-color, #ccc);
     text-align: center;
     padding: 1rem;
-    position: relative;
     flex-shrink: 0;
   }
   
   .layout {
     display: flex;
     flex: 1;
-    position: relative;
+    overflow: hidden;
   }
   
-  .sidebar-left {
+  .sidebar-left, .sidebar-right {
     width: 200px;
     background-color: #f4f4f4;
     padding: 1rem;
-  }
-  
-  .sidebar-right {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 1rem;
-    position: relative;
   }
   
   .body-content {
@@ -44,12 +36,9 @@ html, body {
     align-items: center;
   }
   
-  main {
-    flex: 1;
-  }
-  
-  footer {
-    background-color: #ccc;
+  .menu-item:hover {
+    cursor: pointer;
+    opacity: 0.8;
   }
   
   @media (max-width: 768px) {

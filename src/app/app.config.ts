@@ -9,6 +9,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideStore({ menuItem: menuItemReducer }),
+    provideStore({ menuItem: menuItemReducer }),  // Store ve reducer
   ],
 };

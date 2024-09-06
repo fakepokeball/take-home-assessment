@@ -1,6 +1,20 @@
-.container {
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
     display: flex;
+    flex-direction: column;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
+  
+  header, footer {
+    background-color: #ccc;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+  }
+  

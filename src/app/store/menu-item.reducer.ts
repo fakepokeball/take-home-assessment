@@ -6,7 +6,7 @@ export interface MenuItemState {
 }
 
 export const initialState: MenuItemState = {
-  color: '#ccc'
+  color: '#ccc'  // Default color
 };
 
 export const menuItemReducer = createReducer(

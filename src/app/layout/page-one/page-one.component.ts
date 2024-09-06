@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
-import { Store } from '@ngrx/store';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { Store } from '@ngrx/store';
 import { changeMenuItem } from '../../store/menu-item.actions';
+import { FormComponent } from '../../assets/components/form/form.component';
 
 @Component({
   standalone: true,
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  imports: [CommonModule, RouterModule]
+  selector: 'app-page-one',
+  templateUrl: './page-one.component.html',
+  styleUrls: ['./page-one.component.css'],
+  imports: [CommonModule, RouterModule, FormComponent]
 })
-export class AppComponent {
+export class PageOneComponent {
   constructor(private store: Store) {}
 
   changeColor(color: string) {
