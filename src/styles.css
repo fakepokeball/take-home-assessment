@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+  
+  app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  header, footer {
+    flex-shrink: 0;
+  }
+  
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-item:hover, button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .sidebar {
+    width: 200px;
+    position: fixed;
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .menu-item {
+      width: 100%;
+    }
+  }
+  
